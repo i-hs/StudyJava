@@ -1,4 +1,4 @@
-package chap12;
+package chap122;
 
 
 class Car{
@@ -22,35 +22,11 @@ class Car{
 		this.purchaseDay = purchaseDay;
 		x = y = 0.0;
 	}  // Car 생성자 
-	
-	public double getX() {return this.x;} 
-	public double getY() { return this.y;}
-	public double getFuel() {return this.fuel;}
-	public Day getPurchaseDay() { 
-		return new Day(this.purchaseDay);
-	}
 	public void putSpec() {
 		System.out.println("이름: "+ name);
 		System.out.println("전폭: "+ width+"mm");
 		System.out.println("전고: "+ height+"mm");
 		System.out.println("전장: "+ length+"mm");
 	}
-	public void getSpec() {
-		System.out.println("자동차명: "+ this.name);
-		System.out.println("자동차넓이: "+ this.width);
-		System.out.println("자동차높이: "+ this.height);
-		System.out.println("자동차길이: "+ this.length);
-	}  //getSpec 
 	
-	public boolean moveCar(double x, double y) {
-		this.x += x; this.y += y; 
-		double distance = Math.sqrt(x*x + y*y);
-		if( distance > fuel) return false; 
-		else {
-			fuel -= distance;
-			x += x;
-			y += y;
-			return true;  // 이동 완료 
-		}
-	}  //moveCar
 	} //Car 본체 

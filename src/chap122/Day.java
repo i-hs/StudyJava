@@ -1,4 +1,4 @@
-package chap12;  // 445page
+package chap122;  // 445page
 
 import java.util.GregorianCalendar;
 import java.util.GregorianCalendar.*;
